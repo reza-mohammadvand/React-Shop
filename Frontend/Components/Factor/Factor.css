@@ -1,0 +1,88 @@
+ .list {
+    background-color: #f5f5f5;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list p:first-child::after {
+    content: "";
+    height: 2px;
+    width: 25%;
+    background: #fa6161;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
+  .list p{
+      text-align: right;
+  }
+  .list p:first-child {
+      position: relative;
+        margin-bottom: 30px;
+        line-height: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: 1px solid #e0e0e0;
+        width: 100%;
+        color: #333;
+        text-align: right;
+  }
+  .list hr{
+      width: 100%;
+      background-color: gray;
+  }
+  
+ .list ol {
+    color: #333;
+    width: 100%;
+  }
+ 
+ .list ol li,.list ol>div {
+    width: 100%;
+    padding: 6px 0px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ .list ol>div{
+      font-size: 20px;
+      margin-bottom: 10px;
+  }  
+ .list ol li span:last-child {
+    float: left;
+  }
+  
+ .list .sum {
+    list-style: none;
+    font-weight: bold;
+    color: #000;
+  }
+  
+ .list .sum span:last-child {
+    color: #ca1515;
+  }
+  
+ .list input[type="submit"] {
+    border: none;
+    background-color:rgb(107, 107, 107) ;
+    margin: 40px auto;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.3s linear;
+
+  }
+
+ .list input[type="submit"]:hover {
+    text-decoration: none;
+    background-color: #717fe0;
+  }
+  .list input[type="submit"]:focus {    
+    box-shadow: none;
+  }

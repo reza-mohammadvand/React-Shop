@@ -1,0 +1,40 @@
+.comment-text {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .comment-text .img img {
+    border-radius: 50px;
+    width: 50px;
+    margin-left: 10px;  }
+  
+ .comment-text .cap p {
+    width: 100%;
+    color: #000;
+  }
+
+  
+  
+ .comment-text .cap p:first-child {
+    font-size: 17px;
+  }
+  .comment-text .cap p:nth-child(2) {
+    font-size: 14px;
+    color: gray;
+  }
+  
+.comment-text .cap-details {
+  text-align: right;
+    color: gray;
+    font-size: 13px;
+  }
+  
+.comment-text .cap-details i {
+    color: #717fe0;
+    margin-left: 5px;
+  }

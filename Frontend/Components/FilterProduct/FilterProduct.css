@@ -1,0 +1,184 @@
+
+ .filters-item {
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 20px 60px;
+    width: 72%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-filters-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0px 5px 17px -5px #333;
+    margin-bottom: 30px;
+  }
+  
+ .filters-item .sort,   .filters-item .price,   .filters-item .color {
+    width: 25%;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-filters-items: flex-start;
+    margin: 20px 0;
+  }
+  
+ .filters-item .sort p,   .filters-item .price p,   .filters-item .color p {
+    color: #717fe0;
+  }
+  
+ .filters-item .sort ul,   .filters-item .price ul,   .filters-item .color ul {
+    list-style: none;
+  }
+  
+ .filters-item .sort ul li,   .filters-item .price ul li,   .filters-item .color ul li {
+    font-size: 14px;
+    color: rgb(72, 72, 72);
+    transition: all 0.3s linear;
+  }
+  
+ .filters-item .sort ul li:hover,   .filters-item .price ul li:hover,   .filters-item .color ul li:hover {
+    color: #717fe0;
+  }
+  
+ .filters-item .sort input[type="radio"],   .filters-item .price input[type="radio"],   .filters-item .color input[type="radio"] {
+    display: none;
+  }
+  
+ .filters-item .sort input[type="radio"] + label,   .filters-item .price input[type="radio"] + label,   .filters-item .color input[type="radio"] + label {
+    margin: 3px 0;
+    cursor: pointer;
+  }
+  
+ .filters-item .sort input[type="radio"]:checked + label,   .filters-item .price input[type="radio"]:checked + label,   .filters-item .color input[type="radio"]:checked + label {
+    color: #717fe0;
+  }
+  
+ .filters-item .price .slider-price {
+    width: 100%;
+margin-top: 15px;  
+
+} 
+.filters-item .price ul{
+    width: 75%;
+}
+
+ .filters-item .price .slider-price .show-price{
+    color: #333;
+    width: 100%;
+    font-family: 'iran-sans';
+    margin-top: 12px;
+ }
+
+ .filters-item .price .slider-price input,   .filters-item .price .slider-price label {
+    font-size: 15px;
+  }
+  
+ .filters-item .price .slider-price p {
+    margin-top: 20px;
+  }
+  
+ .filters-item .price .slider-price #slider-range {
+    border: none;
+    border-radius: 50px;
+    background: #e2e2e2;
+    height: 7px;
+    margin: 10px 0;
+  }
+  
+ .filters-item .price .slider-price #slider-range span label:hover {
+    color: #949494;
+  }
+  
+ .filters-item .price .slider-price .ui-slider-handle {
+    width: 14px;
+    height: 14px;
+    top: -3px;
+  }
+  
+ .filters-item .price .slider-price .ui-slider-handle:focus {
+    outline: none;
+  }
+  
+ .filters-item .price .slider-price .ui-slider-range,   .filters-item .price .slider-price .ui-slider-handle {
+    border: none;
+    border-radius: 50px;
+    background-color: #717fe0;
+  }
+  
+ .filters-item .color ul li div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: -3px;
+  }
+  
+ .filters-item .tags {
+    width: 25%;
+    text-align: right;
+    margin: 20px 0;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+ .filters-item .tags p {
+    color: #717fe0;
+    display: block;
+    width: 100%;
+  }
+  
+ .filters-item .tags a {
+  height: fit-content;
+  width: fit-content;
+  display: inline-block;
+  padding: 2px 12px 0px;
+  font-size: 13px;
+  border-radius: 35px;
+  border: 1px solid #adadad;
+  color: #adadad;
+  transition: all 0.3s linear;
+  margin: 4px;
+  }
+  
+ .filters-item .tags a:hover {
+    color: #717fe0;
+    border-color: #717fe0;
+    text-decoration: none;
+  }
+
+
+  .color input[type="checkbox"] {
+    display: none;
+}
+.color  input[type="checkbox"] + label {
+  color: #333;
+  position: relative;
+  padding-right: 21px;
+  cursor: pointer;
+}
+.color  input[type="checkbox"]+ label:before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  border: 1.5px solid #333;
+  position: absolute;
+  right: 3px;
+  top: 4px;
+  opacity: .6;
+  margin: 0px -2px 0px 0px;
+  transition: all .12s, border-color .08s;
+}
+.color input[type="checkbox"]:checked + label:before {
+  height: 19px;
+    width: 9px;
+    top: -4px;
+    right: 3px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom: 2px solid #717fe0;
+    border-right: 2px solid #717fe0;
+    transform: rotate(45deg);
+}
