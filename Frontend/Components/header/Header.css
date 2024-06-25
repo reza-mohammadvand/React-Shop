@@ -1,0 +1,54 @@
+.header{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 50px;
+    background-color: #333;
+}
+
+.logo{
+    min-height: 30px;
+    max-width: 120px;
+    margin-left: 40px;
+}
+
+.logo img{
+    width: 100%;
+}
+.ScrollTrue100 {
+    position: fixed !important;
+    top: -50vh;
+    z-index: 1000;
+    transition: all 1s linear;
+}
+
+
+.ScrollTrue{
+    top:0;
+}
+
+
+@media (max-width: 1200px) {
+.logo {
+    max-width: 120px;
+    margin-left: 15px;
+}
+}
+@media (max-width: 992px) {
+    .logo {
+        max-width: 105px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        padding: 20px 10px;
+}
+.logo {
+    max-width: 80px;
+}
+}

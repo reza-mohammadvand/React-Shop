@@ -1,0 +1,37 @@
+
+.footerLogo{
+    display: flex;
+    width: 27%;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+.footerLogo img{
+    width: 160px;
+}
+.footerLogo .description{
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: justify;
+    color:#e3ecff;
+    padding-left: 45px;
+}
+
+
+   
+               
+                @media (max-width: 992px) {
+                    .footerLogo img {
+                        width: 110px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    .footerLogo .description {
+                        font-size: 12px;
+                    }
+                }
+                @media (max-width: 576px) {
+                    .footerLogo {
+                        width: 95%;
+                    }
+                }
+               

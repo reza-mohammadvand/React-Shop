@@ -1,0 +1,34 @@
+.FotterLinks{
+    width: 18%;
+    height: 100%;
+}
+
+
+.FotterLinks ul{    
+    display: flex;
+    width: 100%;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+    .FotterLinks ul li a{
+        display: inline-block;
+        padding: 5px 0;
+        color:#e3ecff;
+        transition: all 0.3s linear;
+        margin: 0px;
+        font-size: 15px;
+    position: static;
+    }
+    .FotterLinks ul li a:hover{
+            color:#717fe0;
+            transform: translateX(-7px);
+            text-decoration: none;
+        }
+
+
+        @media (max-width: 576px) {
+            .FotterLinks {
+                width: 50%;
+            }
+        }

@@ -1,0 +1,42 @@
+.login a{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding:4px 20px;
+font-size: 14px;
+cursor: pointer;
+color: #f1f5ff;
+text-decoration: none;
+transition: all 0.3s linear;
+background-color: #717fe0;
+border: 2px solid #717fe0;
+border-radius:7px;
+}
+
+.login a:hover{
+    color: #717fe0;
+text-decoration: none;
+background-color: #f1f5ff;
+
+}
+.login p{
+    margin: 0;
+    margin-right: 7px;
+}
+
+
+@media (max-width: 1200px) {
+    .login a {
+        padding: 5px 12px;
+        font-size: 14px;
+     }
+    }
+ 
+     @media (max-width: 450px) {
+       
+        .login a {
+            padding: 5px 10px;
+            font-size: 11px;
+        }
+     }
+     

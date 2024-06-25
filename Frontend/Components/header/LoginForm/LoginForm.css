@@ -1,0 +1,112 @@
+.login-form {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 390px;
+    padding: 40px;
+    background-color: #e1e1f4;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+    left: 50%;
+    position: fixed;
+    top: 120px;
+    transform: translate(-50%, -5%);
+    transition:all 0.3s linear ;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+}
+.login-form img{
+      width: 160px;
+      margin: 0px auto 13px;
+    }
+    .login-form div{
+      padding: 9px 12px;
+      border: 1px solid #dbdbdb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      width: 100%;
+      background-color: #fff;
+    }
+    .login-form i {
+        margin-left: 15px;
+        color: #bebebe;
+        font-size: 17px;
+    }
+    .login-form input {
+        font-family: iran-sans;
+      border: none;
+      width: 100%;
+    }
+    .login-form input:focus{
+        outline: none;
+      }
+      .login-form .login-btn,.login-form a:not([href]){
+        width: 100px;
+        text-decoration: none;
+        background-color: #6173e1;
+        text-align: center;
+        padding: 6px 0;
+        transition: all 0.3s linear;
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        color: #fff;
+        margin: 20px auto 0;
+        cursor: pointer;
+      }
+     
+      .login-form .login-btn:hover{
+        text-decoration: none;
+      }
+      input::placeholder{
+        font-size: 14px;
+      }
+
+      .LoginFormShow{
+        visibility: visible;
+        opacity: 1;
+    }
+    .forget-pass{
+      color: #3b3b3b;
+      text-align: right;
+      font-size: 13px;
+      margin-top:5px;
+      text-decoration: none;
+      transition: all 0.3s linear;
+      width: 100%;
+    }
+    .forget-pass:hover{
+      text-decoration: none;
+      color: #6173e1;
+    }
+
+    @media (max-width: 768px) {
+      .login-form {
+        top: 75px;
+      }
+      .login-form input {
+        font-size: 14px;
+
+    }
+    }
+    @media (max-width: 567px) {
+      .login-form div {
+        padding: 9px;
+      }
+    .login-form {
+      width: 85%;
+      padding: 25px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .login-form input {
+      font-size: 12px;
+
+  }
+  }

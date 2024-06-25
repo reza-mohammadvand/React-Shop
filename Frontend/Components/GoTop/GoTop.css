@@ -1,0 +1,26 @@
+.go-top {
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 65px;
+    width: 45px;
+    height: 47px;
+    background-color: #717fe0;
+    opacity: 0.63;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    transition: all 0.4s linear;
+}
+.go-top:hover{
+    opacity: 0.95;
+
+}
+
+.go-top i {
+    font-size: 23px;
+    margin-top: 2px;
+    color: #e3ecff;
+}

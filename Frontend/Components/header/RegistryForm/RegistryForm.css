@@ -1,0 +1,77 @@
+.registry-form{
+padding: 45px 60px!important;
+width: 580px!important;
+top: 50px!important;
+left: 33%!important;
+}
+
+
+
+.registry-form .captcha{
+    padding: unset;
+    border: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: unset;
+    width: 100%;
+    background-color: unset;
+}
+
+.registry-form .forget-pass{
+font-size: 12px;
+cursor: unset!important;
+width: 100%!important;
+    text-decoration: unset!important;
+    background-color: unset!important;
+    text-align: right!important;
+    padding: unset!important;
+    transition: unset!important;
+    outline: unset!important;
+    border: unset!important;
+    border-radius: unset!important;
+    color: unset!important;
+    margin: 5px 0 10px!important;
+
+}
+.registry-form .registried{
+    font-size: 12px;
+    cursor: pointer!important;
+    width: unset!important;
+        text-decoration: unset!important;
+        background-color: unset!important;
+        text-align: right!important;
+        padding: unset!important;
+        transition: unset!important;
+        outline: unset!important;
+        border: unset!important;
+        border-radius: unset!important;
+        color: unset!important;
+            margin: 20px auto 0!important;
+
+}
+.registry-form .captcha .show-cap{
+    padding: unset;
+    border: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+    width: 50%;
+    background-color: unset;    
+}
+
+.registry-form .captcha .show-cap p{
+    font-size: 22px;
+    text-align: center;
+    width: 75px;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+    .registry-form .captcha .show-cap i{
+        font-size: 18px;
+color: rgb(105, 105, 105);
+cursor: pointer;
+    }
+    
+    

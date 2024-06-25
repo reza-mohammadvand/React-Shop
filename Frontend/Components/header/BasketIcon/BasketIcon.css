@@ -1,0 +1,174 @@
+.basket-icon{
+    float: right;
+position: relative;
+cursor: pointer;
+margin-left: 30px;
+}
+.basket-icon .basket-btn{
+      background-color: transparent;
+      border-radius: 50px;
+}
+.basket-icon i{    
+    font-size: 18px;
+transform: rotateY(180deg);
+          color:#fff;		  
+          transition: all 0.3s linear;
+      }
+      .basket-icon:hover i{
+          color:#717fe0;
+      }
+.EZDrawer__overlay{
+    opacity: 0.6!important;
+ }
+ .EZDrawer__container{
+    width: 28%!important;
+    background-color: #333!important;
+    color: #fff;
+    cursor: default;
+ }
+
+ .show-card {
+    height: 97%;
+    padding: 35px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  
+.show-card .title {
+    margin: 20px 0 20px;
+    height: fit-content;
+    width: 93%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .show-card .title p {
+    font-size: 27px;
+    color: #fff;
+  }
+  
+  .show-card .product {
+    height: fit-content;
+    width: 100%;
+    margin-top: -140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .show-card .product .item {
+    margin: 8px 0;
+    width: 82%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .show-card .product .item .img {
+    position: relative;
+  }
+  
+  .show-card .product .item .img .deleted {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.72);
+    position: absolute;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    opacity: 0;
+  }
+  
+  .show-card .product .item .img .deleted i {
+    color: #fff;
+  }
+  
+  .show-card .product .item .img img {
+    width: 70px;
+  }
+  
+  .show-card .product .item .img:hover .deleted {
+    opacity: 1;
+  }
+  
+  .show-card .product .item .cap {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: #fff;
+    text-align: right;
+    font-size: 16px;
+  }
+  
+  .show-card .product .item .cap a {
+    color: #fff;
+    transition: all 0.3s linear;
+    margin-bottom: 10px;
+  }
+  
+  .show-card .product .item .cap>a:hover {
+    color: #7f8de3;
+    text-decoration: none;
+  }
+  .show-card .product .item .cap a:hover span{
+    color: #fff;
+
+}
+  .show-card .product .item .cap i {
+     font-size: 14px;
+    margin: 0px 6px;
+    color: #fff;
+    margin-right: 12px;
+  }
+  
+  .show-card .btns {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+  }
+  
+  .show-card .btns p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  
+  .show-card .btns a {
+    border: 0;
+    background-color: #6b6b6b;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 33px 8px;
+    border-radius: 50px;
+    transition: all 0.4s linear;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .show-card .btns a:hover {
+    background-color: #717fe0;
+  }
+  
+  .show-card .btns a:hover {
+    text-decoration: none;
+  }
+
+
+
+
+      @media (max-width: 768px) {
+     .basket-icon {
+        margin-right: auto;
+    }
+    }
+
+    
+ 
