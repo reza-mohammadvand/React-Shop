@@ -1,0 +1,239 @@
+.Blog-details{
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:20px auto 100px;
+    flex-wrap: wrap;
+    text-align: right;
+}
+.Blog-details>.path {
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+.Blog-details-item {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ .Blog-details-item .img {
+    overflow: hidden;
+    position: relative;
+  }
+  
+ .Blog-details-item .img .date {
+    padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.853);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+  }
+  
+ .Blog-details-item .img .date p {
+    color: #888;
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  
+ .Blog-details-item .img .date p:first-child {
+    font-weight: bold;
+    font-size: 25px;
+    color: #333;
+  }
+  
+ .Blog-details-item .item-top {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+ .Blog-details-item .item-top p {
+    color: #717fe0;
+    font-size: 13px;
+  }
+  
+ .Blog-details-item .item-top p span {
+    color: #888;
+  }
+  
+ .Blog-details-item .caption p {
+    font-size: 15px;
+    color: #888;
+  }
+  
+ .Blog-details-item .caption .title {
+    margin-bottom: 55px;
+    color: #333;
+    font-size: 31px;
+  }
+  
+ .Blog-details-item .caption .tags {
+    align-items: baseline;
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+  }
+  
+ .Blog-details-item .caption .tags a {
+   font-size: 14px;
+    display: inline-block;
+    padding: 1px 14px;
+    border-radius: 35px;
+    border: 1px solid #adadad;
+    color: #adadad;
+    transition: all 0.3s linear;
+    margin: 2px;
+  }
+  
+ .Blog-details-item .caption .tags a:hover {
+    color: #717fe0;
+    border-color: #717fe0;
+    text-decoration: none;
+  }
+  
+ .Blog-details-item .comments {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+ .Blog-details-item .comments .add {
+  margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+ .Blog-details-item .comments .add p:first-child {
+    color: #333;
+    font-size: 28px;
+  }
+  
+ .Blog-details-item .comments .add form textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+  }
+  
+ .Blog-details-item .comments .add form .input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ .Blog-details-item .comments .add form .input input {
+    height: 45px;
+    padding: 6px 12px;
+    margin: 10px 0;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+  }
+  
+ .Blog-details-item .comments .add form .input input[type="submit"] {
+    color: #717fe0;
+    background-color: #e3ecff;
+    transition: all 0.3s linear;
+    padding: 5px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 35px;
+    width: 70%;
+  }
+  
+ .Blog-details-item .comments .add form .input input[type="submit"]:hover {
+    background-color: #717fe0;
+    color: #e3ecff;
+
+  }
+  .Blog-details-item .comments .add form input:focus ,  .Blog-details-item .comments .add form textarea:focus{
+      outline: none;
+  }
+  
+  .Blog-details-item .comments .comments-title{
+    font-weight: bold;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    line-height: 1.5;
+    font-size: 24px;
+    margin-bottom: 45px;
+  }
+  .Blog-details-item .comments .comments-title:after{
+    content: "";
+    height: 2px;
+    width: 18%;
+    background: #717fe0;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+  }
+
+   @media (max-width: 992px) {
+    .Blog-details {
+      width: 92%;
+    }
+    .Blog-details-item .caption .title {
+      margin-bottom: 25px;
+      font-size: 25px;
+  }
+   }
+   @media (max-width: 768px) {
+    .Blog-details {
+      margin: 50px auto;
+    }
+    
+   }
+   @media (max-width: 576px) { 
+    .Blog-details-item {
+      width: 100%;
+    }
+    .Blog-details-item .comments .add form .input input {
+      height: 40px;
+      padding: 6px 12px;
+      margin: 7px 0;
+    }
+    .Blog-details-item .comments .add form .input {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+  }
+  .Blog-details-item .comments .add form .input input[type="submit"] {
+    width: 100%;
+}
+   }
+
+  
+   @media (max-width: 450px) {
+    .Blog-details-item .caption .title {
+      font-size: 19px;
+  }
+  .Blog-details-item .img .date {
+    padding: 0 8px;
+    top: 15px;
+    left: 15px;
+}
+.Blog-details-item .img .date p {
+    font-size: 9px;
+}
+.Blog-details-item .img .date p:first-child {
+  font-size: 14px;
+}
+.Blog-details-item .caption p {
+  font-size: 14px;
+}
+.Blog-details-item .caption .tags a {
+  padding: 1px 7px;
+  font-size: 12px;
+}
+.Blog-details-item .caption .tags p{
+  font-size: 16px;
+
+}
+   }
+  

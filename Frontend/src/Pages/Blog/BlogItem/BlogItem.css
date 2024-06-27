@@ -1,0 +1,125 @@
+.Blog-Item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+    text-align: right;
+}
+.Blog-list .Blog-Item .img {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .Blog-list .Blog-Item .img img {
+    transition: all 0.7s linear;
+  }
+  
+  .Blog-list .Blog-Item .img img:hover {
+    transform: scale(1.08);
+  }
+  
+  .Blog-list .Blog-Item .img .date {
+    padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.853);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+  }
+  
+  .Blog-list .Blog-Item .img .date p {
+    color: #888;
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  
+  .Blog-list .Blog-Item .img .date p:first-child {
+    font-weight: bold;
+    font-size: 25px;
+    color: #333;
+  }
+  
+  .Blog-list .Blog-Item .title {
+    margin: 17px 0;
+    color: #333;
+    font-size: 20px;
+    transition: all 0.3s linear;
+  }
+  
+  .Blog-list .Blog-Item .title:hover {
+    color: #1b46c2;
+    text-decoration: none;
+  }
+  
+  .Blog-list .Blog-Item .title + p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 22px;
+  }
+  
+  .Blog-list .Blog-Item .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .Blog-list .Blog-Item .main-footer p {
+    color: #1b46c2;
+    font-size: 13px;
+  }
+  
+  .Blog-list .Blog-Item .main-footer p span {
+    color: #888;
+  }
+  
+  .Blog-list .Blog-Item .main-footer a {
+    color: #333;
+    font-size: 17px;
+    transition: all 0.3s linear;
+  }
+  
+  .Blog-list .Blog-Item .main-footer a i {
+    margin-right: 5px;
+  }
+  
+  .Blog-list .Blog-Item .main-footer a:hover {
+    color: #1b46c2;
+    text-decoration: none;
+  }
+
+
+   @media (max-width: 576px) {
+    .Blog-Item {
+      margin-bottom: 25px;
+  }
+   }
+   @media (max-width: 450px) {
+    .Blog-list .Blog-Item .img .date {
+        padding: 0 8px;
+        top: 15px;
+        left: 15px;
+    }
+    .Blog-list .Blog-Item .img .date p {
+        font-size: 9px;
+    }
+    .Blog-list .Blog-Item .img .date p:first-child {
+        font-size: 14px;
+    }
+
+    .Blog-list .Blog-Item .title {
+        margin: 13px 0;
+        font-size: 16px;
+    }
+    .Blog-list .Blog-Item .title + p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .Blog-list .Blog-Item .main-footer p {
+        font-size: 12px;
+    }
+    .Blog-list .Blog-Item .main-footer a {
+        font-size: 14px;
+    }
+ }
+ 

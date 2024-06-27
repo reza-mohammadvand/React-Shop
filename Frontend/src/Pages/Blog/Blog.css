@@ -1,0 +1,37 @@
+.pages-header-blog {
+    background-image: url("../About-us/bg-01.jpg")!important;
+  }
+.Blog-list{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.Blog-list-Items{
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin:30px auto 15px;
+    flex-wrap: wrap;
+}
+
+.blog-list-items{
+    width: 70%;
+}
+
+
+ @media (max-width: 576px) { 
+      .Blog-list{
+        width: 90%;
+        margin: 50px auto;
+    } 
+     .blog-list-items{
+        width: 100%;
+    }
+    
+ }
+
+

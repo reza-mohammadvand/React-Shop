@@ -1,0 +1,66 @@
+
+.about-us {
+    width: 100%;
+  }
+  
+  .pages-header-aboutus {
+
+    background-image: url("bg-01.jpg");
+
+  }
+
+  
+  .about-us-story, .about-us-mission {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 80px auto;
+    text-align: justify;
+    justify-content: space-around;
+  }
+  
+  .about-us-story-img, .about-us-mission-img {
+    width: 33%;
+    position: relative;
+    height: fit-content;
+  }
+  .about-us-story-img img, .about-us-mission-img img{
+position: relative;
+z-index: 2;
+  }
+  
+  .about-us-story-img .border-div, .about-us-mission-img .border-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 4px solid #d4d4d4;
+    z-index: 0;
+    right: 35px;
+    top: 35px;
+  }
+  
+  .about-us-story-cap, .about-us-mission-cap {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px !important;
+  }
+  
+  .about-us-story-cap p, .about-us-mission-cap p {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .about-us-story-cap p:first-child, .about-us-mission-cap p:first-child {
+    color: #333;
+    font-size: 35px;
+  }
+  
+  .about-us-mission-cap {
+    padding-left: 60px !important;
+  }
+  
+  .about-us-mission-img .border-div {
+    left: 35px;
+  }
+  
