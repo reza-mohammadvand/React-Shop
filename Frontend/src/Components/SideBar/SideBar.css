@@ -1,0 +1,210 @@
+.sidbar{
+    display: flex;
+justify-content: center;
+align-items: center;
+align-items: flex-start;
+width: 25%;
+flex-direction: column;
+text-align: right;
+}
+ .sidbar .category {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0px 0 30px;
+  }
+  
+   .sidbar .category li {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    color: #333;
+  }
+  
+  .sidbar .category li a {
+    font-size: 14px;
+    color: #888;
+    transition: all 0.5s linear;
+    display: block;
+    padding: 12px 0;
+    font-weight: normal;
+  }
+
+  
+    .category li a:hover {
+    color: #1b46c2;
+    text-decoration: none;
+  }
+
+.sidbar .product-important{
+  width: 100%;
+  margin: 20px 0;
+}
+.sidbar .product-important .product-important-item{
+  width: 100%;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sidbar .product-important img{
+  width: 21%;
+}
+.sidbar .product-important .product-important-item .caption{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+  justify-content: center;
+  height: 100%;
+  font-size: 14px;
+}
+.sidbar .product-important .product-important-item .caption a{
+  color: #333;
+  transition: all 0.2s linear;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+.sidbar .product-important .product-important-item .caption a:hover{
+  color:#717fe0;
+}
+.sidbar .product-important .product-important-item .caption .caption-price{
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+.sidbar .product-important .product-important-item .caption .caption-price p:first-child{
+  margin-left: 20px;
+}
+.sidbar .product-important .product-important-item .caption .caption-price .price-discount:first-child{
+  text-decoration: line-through;
+}
+.sidbar .product-important .product-important-item .caption .caption-price .price-discount:last-child{
+  font-weight: bold;
+  color: #fa6161;
+}
+.sidbar .product-important .product-important-item .caption .caption-price .price:last-child{
+display: none;}
+.sidbar .product-important ul{
+  list-style: none;
+}
+.sidbar .product-important li {
+  font-size: 24px;
+  position: relative;
+  font-weight: bold;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  color: #333;
+}
+
+   .sidbar .archive {
+    margin: 20px 0;
+    list-style: none;
+    width: 100%;
+  }
+  
+   .risidbarght .archive li {
+    width: 100%;
+  }
+  
+   .sidbar .archive li:first-child {
+    position: relative;
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+   .sidbar .archive a {
+    color: #888;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+   .sidbar .archive a:hover {
+    color: #717fe0;
+    text-decoration: none;
+  }
+  
+   .sidbar .tags {
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+   .sidbar .tags p {
+     position: relative;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .sidebar-title{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    line-height: 1.5;
+    position: relative;
+  }
+  .sidebar-title::after{
+    content: "";
+    height: 2px;
+    width: 40%;
+    background: #717fe0;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+  }
+  
+   .sidbar .tags a {
+    display: inline-block;
+    font-size: 13px;
+    padding: 3px 13px;
+    border-radius: 35px;
+    border: 1px solid #adadad;
+    color: #adadad;
+    transition: all 0.3s linear;
+    margin: 2px;
+  }
+  
+   .sidbar .tags a:hover {
+    color: #717fe0;
+    border-color: #717fe0;
+    text-decoration: none;
+  }
+
+  
+@media (max-width: 768px) {
+  .sidbar .category li {
+    position: relative;
+    font-size: 20px;
+  }
+  .sidbar .category li a {
+    padding: 7px 0;
+}
+.sidbar .archive li:first-child {
+  font-size: 20px;
+}
+.sidbar .archive a {
+  font-size: 14px;
+}
+.sidbar .tags p {
+  font-size: 20px;
+}
+.sidbar .tags a {
+  font-size: 12px;
+  padding: 2px 9px;
+}
+}
+@media (max-width: 576px) {
+  .sidbar {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .category {
+    margin: 15px 0;
+  }
+}
+
+  

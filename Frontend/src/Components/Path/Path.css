@@ -1,0 +1,30 @@
+.path{
+    width: 100%;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.path a{
+    margin-right: 9px;
+    color: rgb(67, 67, 67);
+    text-decoration: none;
+    transition: all 0.3s linear;
+    font-size: 16px;
+}
+
+.path a:hover{
+    text-decoration: none;
+    color: #717fe0;
+}
+
+.path i{
+    color: rgba(51, 51, 51, 0.637);
+    font-size: 15px;
+    margin-right: 7px;
+}
+
+.path i:last-child{
+    display: none;
+}
