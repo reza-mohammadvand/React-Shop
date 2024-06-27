@@ -1,0 +1,443 @@
+.cart{
+    width: 80%;
+    margin:20px auto 100px;
+    padding: 20px;
+
+}
+.cart>.path {
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+.cart table {
+    width: 100%;
+    width: 100%;
+  }
+  
+  .cart table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6;
+    border-top: none;
+  }
+  
+  .cart table thead, .cart table tbody, .cart table tr {
+    width: 100%;
+  }
+  
+  .cart table tr th:first-child {
+    width: 40%;
+    text-align: right !important;
+  }
+  
+  .cart table th {
+    font-size: 20px;
+    padding: 10px 0 !important;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .cart table th p {
+    margin-bottom: 0 !important;
+  }
+  
+  .cart table th .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .cart table th .item .img {
+    position: relative;
+    margin-left: 15px;
+  }
+  
+  .cart table th .item .img .deleted {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.72);
+    position: absolute;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    opacity: 0;
+  }
+  
+  .cart table th .item .img i {
+    position: absolute;
+    opacity: 0;
+    top: 40%;
+    left: 40%;
+    color: #fff;
+      cursor: pointer;
+}
+  
+  .cart table th .item .img img {
+    width: 85px;
+  }
+  
+  .cart table th .item .img:hover .deleted {
+    opacity: 0.8;
+  }
+  .cart table th .item .img:hover i{
+    opacity: 1;
+    z-index: 2;
+
+  }
+  .cart table th .item .cap a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #3a3a3a;
+    transition: all 0.3s linear;
+  }
+  
+  .cart table th .item .cap a:hover {
+    text-decoration: none;
+    color: #717fe0;
+  }
+
+  .cart table th .table-price, .cart table th .final-price {
+    font-size: 19px;
+    color: rgb(85, 85, 85);
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  .cart table th .table-count .input-group {
+    width: 160px;
+    height: 48px;
+    margin: 0 auto;
+  }
+  
+  .cart table th .table-count .input-group input {
+    background-color: #e6e6e6;
+    border: none;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    text-align: center;
+  }
+  
+  .cart table th .table-count .input-group button {
+    border: 1px solid #d4d4d4;
+    padding: 0px 20px;
+  }
+  
+  .cart table tr {
+    font-size: 22px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .cart .btn-cart {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .cart .btn-cart a {
+    display: inline-block;
+    background-color: #f5f5f5;
+    color: #2e2e2e;
+    transition: color 0.3s linear;
+    font-size: 17px;
+    border-radius: 50px;
+    padding: 12px 25px;
+  }
+  
+  .cart .btn-cart a:hover {
+    text-decoration: none;
+    color: #717fe0;
+  }
+  
+  .cart .btn-cart a i {
+    margin-right: 10px;
+    color: #717fe0;
+  }
+  
+  .cart .btn-cart .discount {
+    width: 50%;
+    text-align: right;
+  }
+  
+  .cart .btn-cart .discount p {
+    font-size: 25px;
+  }
+  
+  .cart .btn-cart .discount div {
+    position: relative;
+  }
+  
+  .cart .btn-cart .discount div input[type="text"] {
+    width: 100%;
+    padding: 16px 111px 15px 0;
+    border: 1px solid gray;
+    border-radius: 50px;
+  }
+  
+  .cart .btn-cart .discount div input[type="button"] {
+    border-radius: 50px;
+    border: none;
+    background-color: #717fe0;
+    color: #fff;
+    position: absolute;
+    width: 100px;
+    top: 5px;
+    right: 4px;
+    padding: 12px;
+  }
+  
+
+
+  .cart .discount {
+    width: 50%;
+    text-align: right;
+    margin: 80px 0;
+  }
+  
+  .cart .discount p {
+    font-size: 25px;
+  }
+  
+  .cart .discount div {
+    position: relative;
+  }
+  
+  .cart .discount div input[type="text"] {
+    width: 100%;
+    padding: 16px 111px 15px 0;
+    border: 1px solid gray;
+    border-radius: 50px;
+  }
+  .cart .discount div input[type="text"]:focus{
+      outline: none;
+  }
+  
+  .cart .discount div input[type="button"] {
+    border-radius: 50px;
+    border: none;
+    background-color: #717fe0;
+    color: #e3ecff;
+    position: absolute;
+    width: 100px;
+    top: 5px;
+    right: 4px;
+    padding: 12px;
+  }
+
+
+
+  .cart .sum {
+    width: 85%;
+    margin: 50px auto;
+    padding: 20px 48px;
+    background-color: #e3ecff;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .cart .sum p {
+    font-size: 19px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart .sum p span:last-child {
+    color: #717fe0;
+  }
+  
+  .cart .sum P:first-child {
+    width: 100%;
+    margin-top: 17px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #717fe0;
+    display: block;
+  }
+  
+  .cart .sum a {
+    padding: 9px 0;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    margin: 17px 0;
+    width: 50%;
+    background-color:rgb(168, 168, 168) ;
+    border-radius: 25px;
+    color: #e3ecff;
+    transition: all 0.3s linear;
+  }
+  
+  .cart .sum a:hover {
+    text-decoration: none;
+    background-color: #717fe0;
+  }
+  
+ 
+
+  @media (max-width: 768px) {
+    .cart {
+      width: 95%;
+      margin: 40px auto;
+  }
+    .cart table th {
+      width: 70%;
+  }
+  .cart table th:last-child {
+    width: 20%;
+ 
+}
+    .cart table th .item .img {
+      margin-left: 0;
+    }
+    .cart table th .table-count .input-group button {
+      padding: 0px 12px;
+    }
+    .cart table th .table-count .input-group {
+      width: 110px;
+    }
+    .cart .discount {
+      width: 70%;
+
+  }
+  }
+
+
+
+  @media (max-width: 576px) {
+    .cart .sum button {
+      font-size: 15px;
+      padding: 6px 0;
+    }
+    .cart .sum p {
+      font-size: 15px;
+
+  }
+    .cart .discount {
+      width: 100%;
+
+  }
+  .cart .discount div input[type="button"] {
+    top: 4px;
+    padding: 7px;
+}
+.cart .discount div {
+  font-size: 14px;
+}
+  .cart .discount div input[type="text"] {
+    padding: 10px 111px 10px 0;
+  }
+    .cart .btn-cart .discount {
+      margin-top: 15px;
+      width: 100%;
+    }
+    .cart .btn-cart {
+      justify-content: center;
+    }
+    .cart table th .table-count .input-group {
+      height: 38px;
+    }
+    .input-group-prepend, .input-group-append {
+      height: 100%;
+    }
+    .cart table th {
+      font-size: 17px;
+    }
+    .cart table th .item .cap .star i {
+      font-size: 9px;
+    }
+    .cart table th .item .cap a {
+      font-size: 14px;
+    }
+  }
+
+
+  
+@media (max-width: 480px) {
+  .cart table th .item .img img {
+    width: 55px;
+}
+  .cart .sum P:first-child {
+    font-size: 21px;
+  }
+  .cart .btn-cart .discount p {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  .cart .sum {
+    width: 100%;
+    margin: 50px 0;
+    padding: 0px 15px;
+  }
+  .cart table th .table-count .input-group button {
+    padding: 0px 9px;
+  }
+  .cart table th .table-count .input-group {
+    width: 90px;
+  }
+  .cart table th .item .cap a {
+    font-size: 12px;
+  }
+  .cart table th .table-price, .cart table th .final-price, .cart table th .final-price {
+    font-size: 14px;
+  }
+  .cart table th {
+    font-size: 14px;
+  }
+  
+}
+
+.cart table th .table-price:nth-child(2){
+  display: none;
+}
+
+.cart table th .table-price-discount:first-child{
+  font-size: 19px;
+  color: rgb(85, 85, 85);
+  font-weight: 100;
+  text-align: center;
+  text-decoration: line-through;
+}
+.cart table th .table-price-discount:last-child{
+  color: #fa6161;
+}
+
+
+  @media (max-width: 430px) {
+    .cart .btn-cart .discount div input[type="button"] {
+      padding: 5px;
+    }
+    .cart .btn-cart .discount div input[type="text"] {
+      padding: 8px 111px 10px 0;
+    }
+    .cart table th {
+      font-size: 11px;
+    }
+    .cart table th .table-count .input-group button {
+      padding: 0px 5px;
+    }
+    .cart table th .table-count .input-group {
+      width: 65px;
+    }
+    .cart table th .table-price, .cart table th .final-price, .cart table th .final-price {
+      font-size: 12px;
+    }
+    .cart table th .item .cap .star i {
+      font-size: 5px;
+    }
+    .cart table th .item .cap a {
+      font-size: 10px;
+    }
+    .cart table th .item .cap {
+      padding: 0;
+      padding-right: 7px;
+    }
+    .cart table th {
+      padding: 7px 0 !important;
+    }
+  }
