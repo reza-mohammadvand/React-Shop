@@ -1,0 +1,49 @@
+.blog {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    flex-wrap: wrap;
+  }
+  .blog>div:first-child{
+        width: 100%;
+  }
+  
+  .blog .title-blog{
+    width: fit-content;
+    margin-bottom: 50px;
+    text-align: right;
+    color: #333;
+     font-size: 30px;
+    padding: 20px;
+    position: relative;
+}
+.blog .title-blog::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #beceff;
+    right: 10px;
+    bottom: 0;
+    position: absolute;
+}
+
+  @media (max-width: 992px) {
+    .blog {
+      width: 95%;
+    }
+    .blog .title-blog {
+      font-size: 25px;
+
+  }
+  }
+ 
+  @media (max-width: 450px) {
+    .blog .title-blog {
+      margin-bottom: 24px;
+      font-size: 17px;
+      padding: 12px;
+  }
+ 
+  }

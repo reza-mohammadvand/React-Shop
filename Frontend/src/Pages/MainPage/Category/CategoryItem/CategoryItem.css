@@ -1,0 +1,121 @@
+.category-item{
+    border:1.5px solid rgb(218, 218, 218);
+    color:#333;
+    position: relative;
+    width: 30%;
+    margin: 12px;
+    overflow: hidden;
+}
+.category-item img{
+width: 100%;
+}
+.category-item .cap{
+    align-items: flex-start;
+    color: rgb(66, 66, 66);
+position: absolute;
+top: 17px;
+right: 22px;
+width: fit-content;
+z-index: 2;
+}
+.category-item .cap p{
+    text-align: right;
+    margin: 3px;
+font-weight: bold;
+font-size: 16px;
+    transition: color 0.3s linear;
+}
+
+.category-item .cap p:first-child{
+    margin: 3px;
+font-weight: bold;
+font-size: 21px;
+    transition: color 0.3s linear;
+}
+
+.category-item .btn-item{
+position: absolute;
+bottom: 35px;
+right: 30px;
+z-index: 2;
+transition: color 0.3s linear;
+}
+
+.category-item .btn-item p{
+    font-size: 20px;
+    position: relative;
+    transform: rotateX(90deg);
+    transition: all 0.3s linear;
+}
+.category-item .btn-item p::after{
+    bottom: -7px;
+    left: 0px;
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #e3ecff;
+    transition: all 0.3s linear;
+}
+
+.category-item::after{
+    top: -500px;
+    transform: rotate(45deg);
+    left: -500px;
+    position: absolute;
+    content: "";
+    width: 140%;
+    height: 200%;
+    background-color: #7180e0a2;
+    transition: all 0.3s linear;
+}
+
+.category-item:hover{
+border:none;
+}
+.category-item:hover .cap{
+    color:#fff;
+}
+.category-item:hover .btn-item{
+    color:#fff;
+}
+.category-item:hover::after{
+    top: -120px;
+    left: -50px;
+}
+.category-item:hover .btn-item p{
+    transform: rotateX(0deg);
+}
+.category-item:hover .btn-item p::after{
+    width: 104%;
+}
+
+
+@media (max-width: 992px) {
+    .category-item .cap {
+
+        top: 7px;
+        right: 7px;
+    }
+    .category-item .cap p:first-child {
+        font-size: 17px;
+    }
+    .category-item .cap p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .category-item {
+  
+        width: 45%;
+    }
+    .category {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .category-item {
+        width: 100%;
+    }
+}

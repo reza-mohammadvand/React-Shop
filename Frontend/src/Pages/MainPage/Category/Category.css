@@ -1,0 +1,24 @@
+
+
+.category{
+    font-family: iran-sans;
+    margin:70px 0;
+    width:100%;
+    padding: 10px 70px;
+display: flex;
+align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+    .category a{
+        display: contents;
+    }
+
+    
+
+@media (max-width: 1200px) {
+    .category {
+        padding: 10px 15px;
+    }
+}

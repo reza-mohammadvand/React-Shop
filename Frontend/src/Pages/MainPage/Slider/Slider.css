@@ -1,0 +1,115 @@
+.awssld__bullets {
+    z-index: 5!important;
+    bottom: 10px !important;
+    direction: ltr;
+}
+.awssld__bullets button {
+
+    width: 15px !important;
+    height: 15px !important;
+    background: #b4c7ff !important;
+}
+.awssld__bullets .awssld__bullets--active {
+    background:#717fe0 !important;
+}
+.awssld {
+    height: 637px;
+--loader-bar-color: rgba(255, 255, 255, 0) !important; 
+    --loader-bar-height: 0 !important;
+}
+
+.slider .cap{
+            position: absolute;
+            top: 31%;
+            left: 8%;
+display: flex;
+justify-content: center;
+align-items: center;
+            flex-direction: column;
+            color:#333;
+        }
+         .slider .cap p{
+                font-size: 55px; 
+               text-align: right;
+            } 
+            .slider .cap p:first-child{
+                font-size: 26px;
+            }
+            .slider .shop-now{
+            margin-top: 25px;
+            border: 0;
+            background-color: #717fe0;
+            color: #fff;
+            font-size: 23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px 44px 8px;
+            font-family: iran-sans;
+            border-radius: 50px;
+            transition: all 0.4s linear;
+
+                    }
+                    .slider .shop-now:hover{
+                        text-decoration: none;
+          background-color: rgba(101, 101, 101, 0.61);
+          }
+
+          .awssld {
+            height: 646px;
+        }
+        .awssld__timer{
+            --timer-height: 5px!important;
+            --timer-background-color:#7180e088!important;
+        }
+  
+        @media (max-width: 992px) {
+            .slider .cap p {
+                font-size: 48px;
+            }
+            .slider .cap p:first-child {
+                font-size: 22px;
+            } 
+        }
+        @media (max-width: 768px) {
+            .awssld {
+                height: 500px;
+            }
+            .slider .cap p {
+                font-size: 36px;
+            }
+            .slider .shop-now {
+                font-size: 18px;
+                padding: 3px 34px 8px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .slider .cap p:first-child {
+                font-size: 17px;
+            }
+            .slider .cap p {
+                font-size: 28px;
+            }
+            .slider .cap {
+    padding: 0;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .awssld {
+                height: 450px;
+            }
+            .slider .cap p {
+                font-size: 22px;
+            }
+            .slider .cap p:first-child {
+                font-size: 15px;
+            }
+            .slider .shop-now {
+                font-size: 16px;
+                padding: 3px 28px 5px;
+            }
+        }
+            
+        
