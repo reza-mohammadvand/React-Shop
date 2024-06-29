@@ -1,0 +1,118 @@
+
+  .checkout-item {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px auto 150px;
+  }
+  .checkout-item>.path {
+    padding: 40px 0;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-item .bill-details {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .checkout-item .bill-details p:first-child::after {
+    content: "";
+    height: 2px;
+    width: 25%;
+    background: #fa6161;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
+  
+  .checkout-item .bill-details p:first-child {
+      position: relative;
+        margin-bottom: 30px;
+        line-height: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: 1px solid #e0e0e0;
+        width: 100%;
+        color: #333;
+        text-align: right;
+  }
+  
+  .checkout-item .bill-details form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+    .checkout-item .bill-details form .form-group{
+        text-align: right;
+        width: 48%;
+    }
+  
+  .checkout-item .bill-details form label {
+    color: gray;
+    margin: 0  10px 14px 0;
+    font-size: 15px;
+  }
+  
+  .checkout-item .bill-details form label span {
+    color: #ca1515;
+  }
+  
+  .checkout-item .bill-details form input ,.checkout-item .bill-details form textarea {
+    border: none;
+    margin-bottom: 20px;
+    height: 50px;
+    box-shadow: 0px 7px 12px -10px #333;
+  }
+  .checkout-item .bill-details form input:focus ,  .checkout-item .bill-details form input:focus-visible ,.checkout-item .bill-details form textarea:focus{
+      border: none;
+      outline: none;
+      box-shadow: 0px 12px 25px -12px #333;
+      }
+  .checkout-item .bill-details form input::placeholder,.checkout-item .bill-details form textarea::placeholder {
+    font-size: 13px;
+  }
+
+  .checkout-item .bill-details form textarea{
+      width: 100%;
+      height: auto;
+      padding: 20px;
+  }
+  
+  .cart .sum a {
+    padding: 9px 0;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    margin: 17px 0;
+    width: 50%;
+    background-color:rgb(168, 168, 168) ;
+    border-radius: 25px;
+    color: #e3ecff;
+  }
+  
+  .bill-details input[type="submit"] {
+    width: 40%;
+    border: none;
+    background-color:rgb(107, 107, 107) ;
+    margin: 40px auto;
+    border-radius: 25px;
+    color: #e3ecff;
+    font-size: 18px;
+    transition: all 0.3s linear;
+
+  }
+
+ .bill-details input[type="submit"]:hover {
+    text-decoration: none;
+    background-color: #717fe0;
+  }
+
+ 
