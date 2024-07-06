@@ -47,4 +47,66 @@ The project includes the following pages:
   
 - **Shop**: The main shopping page displaying all products. Users can browse through the entire product catalog, use filters, and sort options to find products.
 
+## Technologies Used
 
+This project leverages a variety of modern web technologies, including:
+
+- **React**: A JavaScript library for building user interfaces. It allows for the creation of reusable UI components.
+- **Redux**: State management library for managing the application state, ensuring a predictable state container.
+- **React Router**: For handling routing within the application, enabling navigation between different components.
+- **Axios**: For making HTTP requests to the backend, facilitating communication between the front end and back end.
+- **Node.js**: Server-side JavaScript runtime that allows the use of JavaScript for backend development.
+- **Express**: Web framework for Node.js, used for building the backend RESTful APIs.
+- **MongoDB**: NoSQL database for storing product, user, and order data, providing a flexible, scalable data storage solution.
+- **CSS Modules**: For styling components locally, ensuring styles are scoped to specific components.
+
+## Getting Started
+
+To get a local copy up and running, follow these steps:
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+- **Node.js**: JavaScript runtime environment.
+- **MongoDB**: NoSQL database server running locally or an account with MongoDB Atlas for cloud-based storage.
+
+### Installation
+
+1. **Clone the repository:** Change to the project directory where the project files are located.
+
+   ```sh
+   git clone https://github.com/reza-mohammadvand/React-Shop.git
+
+2. **Navigate to the project directory::** Change to the project directory where the project files are located.
+
+   ```sh
+   cd React-Shop
+
+3. **Install backend dependencies:** Navigate to the backend directory and install the necessary dependencies using npm.
+
+   ```sh
+   cd backend
+   npm install
+
+4. **Install frontend dependencies:** Navigate to the frontend directory and install the necessary dependencies using npm.
+
+   ```sh
+   cd ../frontend
+   npm install
+
+### Running the Application
+
+1. **Start the backend server first:** This command starts the backend server, which handles API requests and database operations. Ensure your MongoDB server is running.
+
+   ```sh
+   cd backend
+   npm start
+
+2. **Then, start the frontend development server:** This command starts the frontend development server, which serves the React application. It should automatically open your browser to http://localhost:3000.
+
+   ```sh
+   cd ../frontend
+   npm start
+
+3. **Open your browser and navigate to http://localhost:3000:** If the browser doesn't open automatically, manually navigate to http://localhost:3000 to view the application.
